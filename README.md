@@ -5,33 +5,27 @@
   - VUE.js;
   - Laravel 7 USANDO padrão REST;
   - Banco opcional;
+# Arquitetura Utilizada
+- Utilizei o padrão do Laravel para API Rest para Back-End
+- Utilizei o VUE.JS para o Front-End
+- Sem problemas com o back-end
+- Algumas dificuldades em ferramentas do VUE.JS
 
-## Informações adicionais.
-1) No seu fork crie um readme.md contendo as seguintes informações.
-    - Qual arquitetura utilizada no seu projeto.
-    - Teve algum problema no momento do desenvolvimento que gostaria de nos dizer?
-    - Fez algo adicional que não estava previsto nesse documento e gostaria de nos dizer?
-  
-## Objetivos do desafio:  
+## END POINT
 
-### Backend
-1)   Criar um serviço para buscar os dados da operadora
-2)   Criar um serviço para criar uma operadora
-3)   Criar um serviço para editar uma operadora
-4)   Criar um serviço para excluir a operadora
+# Inserir Operadora
+ - http://127.0.0.1:8000/api/operator/add
+# Deletar Operadora
+- http://127.0.0.1:8000/api/operator/delete/{id}
+# Editar Operadora
+- http://127.0.0.1:8000/api/operator/update/{id}
 
-### Frontend
-1)   Seguir o protótipo 
- - https://www.figma.com/file/kgmFNAmWJoRuUUoau9Evgg/Exerc%C3%ADcio-Front-End-Vue?node-id=8%3A625
+# Encontrar operadora pelo status
+- http://127.0.0.1:8000/api/operator/find/{status}
 
-## Diferenciais.
-1) Usar o DOCKER
-2) Fazer teste automatizado usando PHPUNIT
-2) Fazer teste usando CYPRESS
+# Listar Operadora
+- http://127.0.0.1:8000/api/operators
 
-## O que será avaliado:
- - Arquitetura Adotada.
- - Clean Code.
- - Reaproveitamento de código
- - Solução do Problema proposto
- - Melhores práticas de desenvolvimento
+## MIGRATIONS
+
+- Criei uma migration para criar a tabela dentro do banco de dados automaticamente
